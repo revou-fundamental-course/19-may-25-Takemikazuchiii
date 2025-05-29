@@ -14,12 +14,62 @@
 
     <!--Main Content-->
     <main>
+        <!-- Introduction -->
+        <section>
+            <p>Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
+        </section>
 
+        <!-- Form Konversi Suhu-->
+        <form class="padding-medium">
+            <!-- Inputan Suhu -->
+            <div>
+                <label for="input-suhu">Celcius (&deg;C):</label>
+                <input type="number" id="input-suhu" name="suhu">
+            </div>
+         
+
+        <!-- Tombol Action -->
+            <div>
+                <button type="button" id="convert-btn" class="bg-lightseagreen">Konversi</button>
+                <button type="button" id="reset-btn" class="bg-lightcoral">Reset</button>
+                <button type="button" id="reverse-btn" class="bg-lightblue">Reverse</button>
+            </div>
+         </form>
+        
+        <!-- Hasil Konversi -->
+        <section class="padding-medium">
+            <div>
+                <label for="hasil-suhu">Fahrenheit (&deg;F)</label>
+                <textarea id="hasil-suhu" readonly></textarea>
+            </div>
+        </section>
+
+        <!-- Penjelasan -->
+        <section class="padding-medium">
+            <div>
+                <label for="detail-suhu">Penjelasan</label>
+                <textarea id="detail-suhu" readonly></textarea>
+            </div>
+        </section>
+        
+        <!-- Keterangan Formula -->
+        <section>
+            <header>
+                <h2>Cara Konversi Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+            </header>
+            <hr>
+            <div>
+                <p>Introduction dari rumus konversi suhu</p>
+                <strong>S<sub>(&deg;F)</sub> = S<sub>(&deg;C)</sub> x 9/5 + 32</strong>
+                <p>Atau</p>
+                <strong>S<sub>(&deg;F)</sub> = S<sub>(&deg;C)</sub> x 1.8 + 32</strong>
+            </div>
+        </section>
     </main>
 
     <!--Footer Content-->
     <footer>
-
+        <p>&copy; 2025 Indra</p>
     </footer>
     <script type="text/javascript" src="js\script.js"></script>
 </body>
